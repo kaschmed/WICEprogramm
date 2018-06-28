@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPimary">#000000</color>
+    <color name="colorAccent">#c62828</color>
+    <color name="colorPrimaryDark">#d32f2f</color>
+    <color name="fourth">#e53935</color>
+    <color name="button">#ffebee</color>
+
+
+
+    <!-- <color name="colorPrimary">#3F51B5</color>
+     <color name="colorPrimaryDark">#303F9F</color>
+     <color name="colorAccent">#FF4081</color>!-->
+
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaschmed.wice.Favorites"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="382dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/my_posts"
+        android:textColor="@color/colorPimary"
+        app:layout_constraintBottom_toTopOf="@+id/myrecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/myrecipe"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:background="@color/button"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText11">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/fourth"
+        android:text="@string/view_all"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myfavorites" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="383dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/my_favorites"
+        android:textColor="@color/colorPimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/myfavorites"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="@color/button"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/fourth"
+        android:text="@string/view_all2"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/myfavorites"
+        app:layout_constraintEnd_toEndOf="@+id/myrecipe"
+        app:layout_constraintTop_toBottomOf="@+id/myrecipe" />
+
+</LinearLayout>

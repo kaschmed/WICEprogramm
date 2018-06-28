@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.kaschmed.wice.newIntolerance"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="160dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:ems="10"
+        android:hint="@string/intolerance"
+        android:inputType="textPersonName"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        tools:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:ems="10"
+        android:hint="@string/e_number"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        tools:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="178dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/fourth"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:text="Quit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="@+id/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/login" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="178dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/fourth"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/button15" />
+    </LinearLayout>
+
+</LinearLayout>
