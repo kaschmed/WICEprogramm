@@ -26,12 +26,18 @@ public interface RecipeInterDAO {
     //insert
     @Insert
     void insertRecipe(RecipesforRooms...recipes);
+    void insertZudaten(RecipesforRooms...recipes);
+    void insertZubereitung(RecipesforRooms...recipes);
     //update
     @Update
     void updateRecipe(RecipesforRooms...recipes);
+    void updateZudaten(RecipesforRooms...recipes);
+    void updateZubereitung(RecipesforRooms...recipes);
     //delete
    @Delete
     void deleteRecipes(RecipesforRooms...recipes);
+    void deleteZudaten(RecipesforRooms...recipes);
+    void deleteZubereitung(RecipesforRooms...recipes);
 
     @Query("DELETE FROM recipes ")
      void deleteAllRecipes();
