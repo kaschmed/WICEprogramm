@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,43 +7,33 @@
     tools:context="com.example.kaschmed.wice.zutatenAusgabeValidierung"
     tools:layout_editor_absoluteY="81dp">
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="336dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="55dp"
-        android:layout_marginTop="22dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/zutatenliste"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/result_Scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginTop="119dp"
+        android:textColor="@android:color/black" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="137dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="100dp"
-        android:layout_marginStart="48dp"
-        android:text="@string/safe"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:background="#B71C1C"
+        android:elevation="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181dp"
+        android:text="@string/googleITbutton"
+        android:onClick="searchInformation"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:visibility="visible" />
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="137dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="100dp"
-        android:layout_marginEnd="40dp"
-        android:text="@string/not_safe"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
